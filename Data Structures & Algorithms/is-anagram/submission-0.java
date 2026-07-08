@@ -1,3 +1,7 @@
+/*
+Time Complexity: O(n)
+Space Complexity: O(n)
+*/
 class Solution {
     public boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) {
