@@ -1,6 +1,8 @@
 class Solution {
     public boolean isSubsequence(String s, String t) {
         /*
+            chatgpt helped me on my 4th attempt.....
+            
             sub subsequence
             frequency related
             count s strings or ask, like our mistake from before
