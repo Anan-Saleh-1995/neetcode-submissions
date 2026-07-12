@@ -20,7 +20,7 @@ class Solution {
         // System.out.println("index 2 :" + strArray[3]);
         for (int i = 0; i < strArray.length; i++) {
             // if (strArray[i].contains(" ")) {
-            maxLengthOfWord = Math.max(strArray[i].length(), maxLengthOfWord);
+            maxLengthOfWord = Math.max(strArray[i].length(), maxLengthOfWord); // issue was that i did not read well, it says length of last word....
             System.out.print(strArray[i] + "\n");
             // }
         }
