@@ -12,7 +12,7 @@ class Solution {
             return strs[0];
         }
         for (let i = 0; i < strs.length; i++) {
-            if (strs[i].length === 0) {
+            if (strs[i].length === 0) { // chat gpt helped me on this one
                 continue;
             }
             let word = strs[i][0];
