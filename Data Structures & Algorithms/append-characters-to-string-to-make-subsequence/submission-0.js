@@ -4,6 +4,11 @@ class Solution {
      * @param {string} t
      * @return {number}
      */
+    /**
+    * after discussing this with chatgpt it turns out i can do this in a better way
+    * it is possible that i do it in one loop, and nextCharIndex can be used
+    * for example t.length - nextCharIndex
+    */
     appendCharacters(s, t) {
         let str = "";
         let nextCharIndex = 0;
@@ -14,6 +19,7 @@ class Solution {
             str+=s[i];
             nextCharIndex++;
         }
+        // here we can do nextCharIndex === t.length return 0
         if (str === t) { // try to use string methods for accuracy and other coding languages lower levels
             return 0;
         }
@@ -24,7 +30,7 @@ class Solution {
         console.log(nextCharIndex);
         console.log(str);
 
-        return appendStr.length;
+        return appendStr.length; // and here instead of that second loop we can do return t.length - nextCharIndex
 
     }
 }
